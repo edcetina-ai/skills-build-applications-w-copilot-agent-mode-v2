@@ -1,10 +1,13 @@
 .App {
   text-align: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 60px;
+  margin-right: 20px;
+  vertical-align: middle;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,19 +16,64 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar {
+  background: linear-gradient(90deg, #0d47a1 0%, #1976d2 100%) !important;
+  box-shadow: 0 2px 8px rgba(13, 71, 161, 0.1);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.navbar-brand:hover, .navbar-nav .nav-link.active {
+  color: #ffd600 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(13, 71, 161, 0.08);
+  background: #fff;
+}
+.card-title, h1, h2, h3, h4, h5, h6 {
+  color: #0d47a1;
+  font-weight: 700;
+}
+
+.table {
+  background: #f5faff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.table thead.table-dark th {
+  background: #1976d2 !important;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e3f2fd;
+}
+.table-hover tbody tr:hover {
+  background-color: #bbdefb;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus {
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #1565c0 0%, #64b5f6 100%);
+  color: #ffd600;
+}
+
+.App-link, a {
+  color: #1976d2;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.App-link:hover, a:hover {
+  color: #ffd600;
 }
 
 @keyframes App-logo-spin {
